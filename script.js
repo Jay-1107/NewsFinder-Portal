@@ -13,7 +13,7 @@ function reload() {
 async function fetchNews(query) {
   try {
     const res = await fetch(
-      `${BASE_URL}?access_key=${API_KEY}&keywords=${query}&countries=in&languages=en&limit=12`
+      `https://${BASE_URL}?access_key=${API_KEY}&keywords=${query}&countries=in&languages=en&limit=12`
     );
     const data = await res.json();
 
